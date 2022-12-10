@@ -1,3 +1,113 @@
+html {
+  height: 600px;
+  width: 500px;
+}
+
 body {
-  background-color: #1c1c1c;
+  /* background-color: #1c1c1c; */
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    overflow: auto;
+}
+
+.peepNodesOuter {
+  display: block;
+  position: absolute;
+  height: -webkit-fill-available;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: -webkit-fill-available;
+  padding: 20px;
+  box-shadow: 0 0 15px #777;
+  color: #fff;
+  background: rgb(30, 190, 255);
+  background: -moz-linear-gradient(180deg, rgba(30, 190, 255, 1) 0%, rgba(49, 255, 97, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(30, 190, 255, 1) 0%, rgba(49, 255, 97, 1) 100%);
+  background: linear-gradient(180deg, rgba(30, 190, 255, 1) 0%, rgba(49, 255, 97, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1ebeff", endColorstr="#31ff61", GradientType=1);
+}
+
+.peepNodesInner {
+  display: flex;
+  flex-direction: column;
+}
+
+.peepTopBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 0;
+  margin-bottom: 12px;
+}
+
+.peepTopBar img {
+  width: 40px;
+}
+
+.peepTitleArea {
+  font-size: 1.5em;
+  font-weight: 700;
+
+}
+
+.peepCheckList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.peepCheckItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 0;
+  position: relative;
+}
+
+.peepProfile {}
+
+.peepOverview {}
+
+.peepContact {}
+
+.peepRelationships {}
+
+.peepFriends {}
+
+.peepLikes {}
+
+.peepGroups {}
+
+.peepCheckTitle {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.peepCheckItem img {
+  width: 25px;
+  margin-right: 25px;
+}
+
+.peepGet {
+  position: absolute;
+  right: 0;
+  background: #f7f779;
+  color: #555;
+  font-weight: 600;
+  padding: 7px 9px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.peepDownload {
+  margin-top: 15px;
+  background: #1ebeff;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 7px;
+  padding: 12px 0;
+  cursor: pointer;
 }

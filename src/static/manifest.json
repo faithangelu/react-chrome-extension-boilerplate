@@ -1,6 +1,6 @@
 {
-  "name": "React Extension",
-  "description": "Chrome Extension in React!",
+  "name": "PeepNodes Extension",
+  "description": "Extension scraper in React!",
   "version": "1.0.0",
   "manifest_version": 3,
   "icons": {
@@ -8,20 +8,10 @@
     "48": "icon.png",
     "128": "icon.png"
   },
-  "action": {
-    "default_popup": "popup.html",
-    "default_title": "React Extension",
-    "default_icon": "icon.png"
-  },
-  "permissions": ["storage"],
+  "action": {},
+  "permissions": ["storage", "activeTab",  "scripting"],
   "options_page": "options.html",
   "background": {
     "service_worker": "background.js"
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["contentScript.js"]
-    }
-  ]
+  }
 }
